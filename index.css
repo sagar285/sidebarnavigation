@@ -1,0 +1,50 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.maindiv {
+    display: flex;
+    height: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 18%;
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 82%;
+    height: 60px; /* Adjust the height as needed */
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 18%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+/* Main Content */
+.maincontent {
+    margin-top: 60px; /* Same as navbar height */
+    padding: 20px;
+    width: 82%;
+    margin-left: 18%;
+    height: calc(100vh - 60px); /* Full height minus navbar height */
+    overflow-y: auto;
+}
