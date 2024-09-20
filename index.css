@@ -15,7 +15,7 @@ body, html {
 /* Sidebar Styles */
 .sidebar {
     width: 18%;
-    background-color: black;
+    background-color: rgb(58, 60, 136);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -28,7 +28,7 @@ body, html {
 .navbar {
     width: 82%;
     height: 60px; /* Adjust the height as needed */
-    background-color: black;
+    background-color: rgb(58, 60, 136);
     position: fixed;
     top: 0;
     left: 18%;

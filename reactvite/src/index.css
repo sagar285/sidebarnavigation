@@ -1,0 +1,116 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.maindiv {
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 18%;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+  width: 82%;
+  height: 60px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 18%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 1;
+}
+
+/* Main Content */
+.maincontent {
+  background-color: yellow;
+  margin-top: 60px;
+  padding: 20px;
+  width: 82%;
+  margin-left: 18%;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Flexbox and List Styles */
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.listflexbox {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.listflexbox li {
+  margin: 39px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  width: 100%; /* Adjusted to make the modal smaller */
+  max-width: 600px; /* Maximum width to ensure it doesn't get too large */
+  max-height: 70vh; 
+    overflow-y: auto; /* Scrollbar inside modal */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  box-sizing: border-box;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between inputs */
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Scrollbar Styles */
+.modal::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
